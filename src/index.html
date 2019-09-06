@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Food Hunter</title>
+    <link href="https://fonts.googleapis.com/css?family=Modak&display=swap" rel="stylesheet">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>  
+
+    <main>
+        <section class=" hero">
+
+            <div class=" container search">
+            <h1 class="title">Food Hunter</h1>
+
+                <form action="">
+                    <input type="text" placeholder="search your best dish" name="recipeSearch" id="">
+                    <span >Filter</span><i class="tiny material-icons">arrow_drop_down</i>
+                    <fieldse id="filter">
+                        <Legend>Diet</Legend>
+                        <label for="balanced">
+                            <input type="radio" value="balanced" name="diet" id="balanced">
+                            <span>balanced</span>
+                        </label>
+                        <label for="high-protein">
+                            <input type="radio" value="high-protein" name="diet" id="high-protein">
+                            <span>high-protein</span>
+                        </label>
+                        <label for="high-fiber">
+                            <input type="radio" value="high-fiber" name="diet" id="high-fiber">
+                            <span>high-fiber</span>
+                        </label>
+                        <label for="low-fat">
+                            <input type="radio" value="low-fat" name="diet" id="low-fat">
+                            <span>low-fat</span>
+                        </label>
+                        <label for="low-carb">
+                            <input type="radio" value="low-carb" name="diet" id="low-carb">
+                            <span>low-carb</span>
+                        </label>
+                        <label for="low-sodium">
+                            <input type="radio" value="low-sodium" name="diet" id="low-sodium">
+                            <span>low-sodium</span>
+                        </label>
+                        
+                    </fieldset>
+                    <fieldset id="calories">
+                        <Legend>Calories</Legend>
+                        Min: <input type="number" name="Min" id=""> - Max: <input type="number" name="Max" id="">
+                    </fieldset>
+                    <button type="submit" class="btn btn-primary">Search</button>
+
+                </form>
+            </div>
+
+        </section>
+        <section id="main">
+            <div class="container recipes">
+                <div class="recipe-item recipeCard-01">
+                    <div class="recipeCard__img">
+                        <img class="materialboxed" data-caption="A picture of a way with a group of trees in a park" width="250" src="https://lorempixel.com/800/400/nature/4">
+                    </div>
+                    <div class="recipeCard__details">
+                        <h5 class="title"><a href="#">Nummus Desert</a></h5>
+                        <p >INGREDIENTS</p>
+                        <ul class="recipeCard__details__ing">
+                            <li>Oin</li>
+                            <li>Peanuts</li>
+                            <li>Jam</li>
+                            <li>Lettue</li>
+                            <li>Cucmber</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="recipeCard">
+                    <div class="recipeCard__img">
+                        <img class="materialboxed" data-caption="A picture of a way with a group of trees in a park" width="250" src="https://lorempixel.com/800/400/nature/4">
+                    </div>
+                    <div class="recipeCard__details">
+                        <h5 class="title"><a href="#">Nummus Desert</a></h5>
+                        <p>Ingredients</p>
+                        <ul>
+                            <li>Oin</li>
+                            <li>Peanuts</li>
+                            <li>Jam</li>
+                            <li>Lettue</li>
+                            <li>Cucmber</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="recipeCard">
+                    <div class="recipeCard__img">
+                        <img class="materialboxed" data-caption="A picture of a way with a group of trees in a park" width="250" src="https://lorempixel.com/800/400/nature/4">
+                    </div>
+                    <div class="recipeCard__details">
+                        <h5 class="title"><a href="#">Nummus Desert</a></h5>
+                        <p>Ingredients</p>
+                        <ul>
+                            <li>Oin</li>
+                            <li>Peanuts</li>
+                            <li>Jam</li>
+                            <li>Lettue</li>
+                            <li>Cucmber</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="recipeCard">
+                    <div class="recipeCard__img">
+                        <img class="materialboxed" data-caption="A picture of a way with a group of trees in a park" width="250" src="https://lorempixel.com/800/400/nature/4">
+                    </div>
+                    <div class="recipeCard__details">
+                        <h5 class="title"><a href="#">Nummus Desert</a></h5>
+                        <p>Ingredients</p>
+                        <ul>
+                            <li>Oin</li>
+                            <li>Peanuts</li>
+                            <li>Jam</li>
+                            <li>Lettue</li>
+                            <li>Cucmber</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="recipeCard">
+                    <div class="recipeCard__img">
+                        <img class="materialboxed" data-caption="A picture of a way with a group of trees in a park" width="250" src="https://lorempixel.com/800/400/nature/4">
+                    </div>
+                    <div class="recipeCard__details">
+                        <h5 class="title"><a href="#">Nummus Desert</a></h5>
+                        <p>Ingredients</p>
+                        <ul>
+                            <li>Oin</li>
+                            <li>Peanuts</li>
+                            <li>Jam</li>
+                            <li>Lettue</li>
+                            <li>Cucmber</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="recipeCard">
+                    <div class="recipeCard__img">
+                        <img class="materialboxed" data-caption="A picture of a way with a group of trees in a park" width="250" src="https://lorempixel.com/800/400/nature/4">
+                    </div>
+                    <div class="recipeCard__details">
+                        <h5 class="title"><a href="#">Nummus Desert</a></h5>
+                        <p class="">Ingredients</p>
+                        <ul >
+                            <li>1 tablespoon kosher salt</li>
+                            <li>1 whole 4-pound chicken, giblets reserved for another use</li>
+                            <li>1/4 cup (1/2 stick) unsalted butter, melted</li>
+                            <li>Lettue</li>
+                            <li>Cucmber</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="recipeCard">
+                    <div class="recipeCard__img">
+                        <img class="materialboxed" data-caption="A picture of a way with a group of trees in a park" width="250" src="https://lorempixel.com/800/400/nature/4">
+                    </div>
+                    <div class="recipeCard__details">
+                        <h5 class="title"><a href="#">Nummus Desert</a></h5>
+                        <p>Ingredients</p>
+                        <ul>
+                            <li>Oin</li>
+                            <li>Peanuts</li>
+                            <li>Jam</li>
+                            <li>Lettue</li>
+                            <li>Cucmber</li>
+                        </ul>
+                    </div>
+                </div> -->
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+</body>
+</html>
