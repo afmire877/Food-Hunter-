@@ -20,9 +20,12 @@
             <h1 class="title">Food Hunter</h1>
 
                 <form action="">
-                    <input type="text" placeholder="search your best dish" name="recipeSearch" id="">
+                    <input type="text" id="recipeSearch" placeholder="search your best dish" name="recipeSearch" id="">
                     <span >Filter</span><i class="tiny material-icons">arrow_drop_down</i>
-                    <fieldse id="filter">
+                    <div id="filter">
+
+
+                    <fieldset id="diet">
                         <Legend>Diet</Legend>
                         <label for="balanced">
                             <input type="radio" value="balanced" name="diet" id="balanced">
@@ -54,7 +57,9 @@
                         <Legend>Calories</Legend>
                         Min: <input type="number" name="Min" id=""> - Max: <input type="number" name="Max" id="">
                     </fieldset>
-                    <button type="submit" class="btn btn-primary">Search</button>
+                    </div>
+                    <br/>
+                    <button type="submit" class="btn btn-primary searchButton">Search</button>
 
                 </form>
             </div>
