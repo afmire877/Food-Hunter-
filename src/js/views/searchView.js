@@ -1,7 +1,10 @@
 import { el } from './base';
 
+
+
+
 const getDiet = () => {
-    let arr = Array.from(document.querySelectorAll('#diet label input'));
+    let arr = Array.from(el.dietInput);
     const dietType = arr.filter((item) => {
         return item.checked
     })
@@ -31,7 +34,7 @@ export const renderRecipeCard = (recipe) => {
             <img class="materialboxed" data-caption="${recipe.label}" width="250" src="${recipe.image}">
         </div>
         <div class="recipeCard__details">
-            <h5 class="title"><a href="${recipe.url}">${recipe.label}</a></h5>
+            <h5 class="title"><a href="${recipe.url}" target='_blank'>${recipe.label}</a></h5>
             <p >INGREDIENTS</p>
             <ul class="recipeCard__details__ing">
             ${renderList(recipe.ingredientLines)}
@@ -41,5 +44,14 @@ export const renderRecipeCard = (recipe) => {
     `;
 
     el.recipesContainer.insertAdjacentHTML('beforeend', markup)
+
+}
+
+export const clearInputs = () => {
+    let arr = Array.from(el.dietInput);
+    arr.forEach(item => item.checked = false)
+    el.searchInput.value = "";
+    el.caloriesInput.children.Min.value = "";
+    el.caloriesInput.children.Max.value = "";
 
 }
