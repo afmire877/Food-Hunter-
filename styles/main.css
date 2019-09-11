@@ -5,9 +5,32 @@
 
 }
 
+:root {
+    --ratio-percentage: 75%;
+}
+
+.aspect-ratio {
+    padding-top: var(--ratio-percent);
+  }
+.absolute-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 /* RESET STYLES */
-
+#recipeSearch::placeholder {
+    color: black
+}
+#diet span,
+#calories span {
+    color: black;
+}
+#calories input {
+    width: 20%;
+}
 fieldset {
     border-style: none;
 
@@ -42,12 +65,14 @@ section.hero {
 
 .container.recipes {
     margin-top: 60px;
+    display: flex;
     display: grid;
     
     grid-auto-flow: row;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 30px;
     column-gap: 30px;
+    
     
 
 }
@@ -70,14 +95,31 @@ section.hero {
 .recipe-item {
     /* text-align: center; */
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-content: center;
-    align-items: center;
-
-
+    align-content: flex-start;
+    box-shadow: 1px 2px 2px black;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    
 }
 
+.recipe-item:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.recipeCard__details {
+
+    padding : 10px;
+}
 h1.title {
     font-family: 'Modak', cursive;
+}
+.recipeCard__img, 
+.recipeCard__img img 
+ {
+    width: 100%;
+}
+.recipeCard__details__ing {
+    height: 300px;
+    overflow-y: scroll;
 }
