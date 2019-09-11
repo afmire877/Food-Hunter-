@@ -6,5 +6,6 @@ export const el = {
     searchButton: document.querySelector('.searchButton'),
     recipesContainer: document.querySelector('.recipes'),
     dietInput: document.querySelectorAll('#diet label input'),
-    collapsible : document.querySelector('.collapsible')
+    spinner : document.querySelector('.hexdots-loader'),
+
 }

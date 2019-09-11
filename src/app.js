@@ -19,8 +19,8 @@ const controlSearch = async (e) => {
     
     if(query.query) {
         state.search = new Search(query);
-        await state.search.getResults()
-        console.log(state.search.result);
+        el.spinner.style.display = 'inline-block';
+        await state.search.getResults();
         await state.search.result.forEach((recipe) => {searchView.renderRecipeCard(recipe.recipe)})
     }
     

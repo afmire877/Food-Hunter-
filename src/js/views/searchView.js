@@ -42,7 +42,7 @@ export const renderRecipeCard = (recipe) => {
         </div>
     </div>
     `;
-
+    el.spinner.style.display = 'none';
     el.recipesContainer.insertAdjacentHTML('beforeend', markup)
 
 }
