@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Food Hunter</title>
+    <link href="https://fonts.googleapis.com/css?family=Modak&display=swap" rel="stylesheet">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>  
+    <main>
+        <section class=" hero">
+            <div class=" container search">
+            <h1 class="title">Food Hunter</h1>
+
+                <form action="">
+                    <input type="text" id="recipeSearch" placeholder="search your best dish" name="recipeSearch" id="">
+                    <span >Filter</span><i class="tiny material-icons">arrow_drop_down</i>
+                    <div id="filter">
+
+
+                    <fieldset id="diet">
+                        <Legend>Diet</Legend>
+                        <label for="balanced">
+                            <input type="radio" value="balanced" name="diet" id="balanced">
+                            <span>balanced</span>
+                        </label>
+                        <label for="high-protein">
+                            <input type="radio" value="high-protein" name="diet" id="high-protein">
+                            <span>high-protein</span>
+                        </label>
+                        <label for="high-fiber">
+                            <input type="radio" value="high-fiber" name="diet" id="high-fiber">
+                            <span>high-fiber</span>
+                        </label>
+                        <label for="low-fat">
+                            <input type="radio" value="low-fat" name="diet" id="low-fat">
+                            <span>low-fat</span>
+                        </label>
+                        <br>
+                        <label for="low-carb">
+                            <input type="radio" value="low-carb" name="diet" id="low-carb">
+                            <span>low-carb</span>
+                        </label>
+                        <label for="low-sodium">
+                            <input type="radio" value="low-sodium" name="diet" id="low-sodium">
+                            <span>low-sodium</span>
+                        </label>
+                        
+                    </fieldset>
+                    <fieldset id="calories">
+                        <Legend>Calories</Legend>
+                        <span> Min: </span>
+                        <input type="number" name="Min" id="">
+                        <span> - Max: </span>
+                        <input type="number" name="Max" id="">
+                    </fieldset>
+                    </div>
+                    <br/>
+                    <button type="submit" class="btn btn-primary searchButton">Search</button>
+
+                </form>
+            </div>
+
+        </section>
+        <section id="main">
+            <div class="container recipes">
+                <!-- rendered card will go here -->
+                <div class="hexdots-loader"></div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+<script type="text/javascript" src="bundle.js"></script></body>
+</html>
